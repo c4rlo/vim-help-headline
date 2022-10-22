@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+for i in {0..4}; do
+    PATTERN=$i vim -u NONE -i NONE -e -s -S s.vim 2>"log$i.txt"
+done
